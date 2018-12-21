@@ -14,4 +14,9 @@ public class HelloWorldController {
         return "1.0.0";
     }
 
+    @GetMapping("/hello")
+    public String hello(){
+        log.info("Hello");
+        return "World";
+    }
 }
